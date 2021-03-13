@@ -371,6 +371,10 @@ a.nav-link[href]:hover {
     opacity: 10;
 }
 
+#hidden {
+    display: none;
+}
+
 #check {
     height:40px;
     width:40px;
