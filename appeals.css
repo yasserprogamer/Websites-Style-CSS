@@ -1,0 +1,180 @@
+/*----------Text Styles----------*/
+.ws6 {font-size: 8px;}
+.ws7 {font-size: 9.3px;}
+.ws8 {font-size: 11px;}
+.ws9 {font-size: 12px;}
+.ws10 {font-size: 13px;}
+.ws11 {font-size: 15px;}
+.ws12 {font-size: 16px;}
+.ws14 {font-size: 19px;}
+.ws16 {font-size: 21px;}
+.ws18 {font-size: 24px;}
+.ws20 {font-size: 27px;}
+.ws22 {font-size: 29px;}
+.ws24 {font-size: 32px;}
+.ws26 {font-size: 35px;}
+.ws28 {font-size: 37px;}
+.ws36 {font-size: 48px;}
+.ws48 {font-size: 64px;}
+.ws72 {font-size: 96px;}
+.wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
+/*----------Para Styles----------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: wheat;
+}
+
+section {
+    height: 40vh;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    align-items: center; /* to make it center between up and down*/
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    border: 1px solid rgba(120, 120, 120, 0.199);
+    margin-top: 5px;
+    font-family: 'Montserrat';
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+#status {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgba(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: #ff0000;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 1;
+        pointer-events: none;
+    }
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 1.15;
+}
+/* Please Edit this */
+a[href]:hover {
+    color: #0000c0;
+    text-decoration: underline;
+}
+
+a[href]:active {
+    color: red;
+}
+
+a[href]:visited {
+    color: blue;
+}
+
+#btn {
+    color:white;
+    background-color:black;
+    height:110px;
+    width:520px;
+    font-size:55px;
+    font-family:serif;
+    font-weight:bold;
+    border-radius:20px;
+}
+#btn:hover {
+    color: black;
+    background-color:white;
+    box-shadow:0px 0px 50px 5px black;
+}
+
+#check {
+    height:40px;
+    width:40px;
+}
+
+#footer {
+    border-block-color: #353535;
+    background-color:#d9d9d9;
+    width: 100%;
+    min-height: 150px;
+    margin-top: 100px;
+    padding-top: 10px;
+}
+
+#footer:hover {
+    border-block-color: #000000;
+    background-color:#ffffff;
+}
