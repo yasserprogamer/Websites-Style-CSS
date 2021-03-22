@@ -382,9 +382,10 @@ a.nav-link[href]:hover {
 
 #footer {
     border-block-color: #353535;
-    background-color:#d9d9d9;
+    background-color:#000000;
+    color: white;
     width: 100%;
-    min-height: 150px;
+    height: 100%;
     margin-top: 100px;
     margin-bottom: 0;
     padding-top: 10px;
@@ -398,6 +399,78 @@ a.nav-link[href]:hover {
 #footer:hover {
     border-block-color: #000000;
     background-color:#ffffff;
+    color: black;
+    text-decoration-color: white;
+}
+
+.coollink {
+    color: white;
+    text-decoration: none white;
+}
+
+.coollink:hover {
+    color: black;
+    display:inline-block;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+    width: 90%;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.FullWidth {
+    width: 100%;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+@keyframes afkanime {
+    5% {opacity: 80%;}
+    10% {opacity: 60%;}
+    15% {opacity: 40%;}
+    20% {opacity: 20%;}
+    25% {opacity: 0%; }
+    35% {opacity: 20%; left: 25%; top: 20%;}
+    40% {opacity: 40%;}
+    45% {opacity: 60%;}
+    50% {opacity: 80%;}
+    55% {opacity: 100%;}
+    65% {opacity: 80%; bottom: 10%; right:50%;}
+    70% {opacity: 60%;}
+    75% {opacity: 40%;}
+    80% {opacity: 20%;}
+    85% {opacity: 0%;}
+    95% {opacity: 50%; right: 0%; top: 20%;}
+    100% {opacity: 100%;}
+}
+
+.AFK-LIST {
+    text-align: center;
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 25px;
+    animation-name: afkanime;
+    animation-duration: 17s;
+    animation-direction:normal;
+    animation-delay: 0s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
 }
 
 .bsc-contextmenu {

@@ -1,0 +1,51 @@
+/*WIDTH SET*/
+.wi3{width: 300px;}
+.wi4{width: 400px;}
+/**/
+
+
+#buttonblack {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    width: 300px;
+    height: 80px;
+    font-size: 45px;
+    outline: none;
+    border-color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+@keyframes bkhov {
+    0%   {background-color: black;}
+    25%  {background-color: #4f4f4f; color: white;}
+    50%  {background-color: #8f8f8f; color: black;}
+    75%  {background-color: #bfbfbf;}
+    100% {background-color: #ffffff;}
+}
+
+#buttonblack:hover {
+    background-color: white;
+    color: black;
+    animation-name: bkhov;
+    animation-duration: 0.75s;
+}
+
+.Opacity123 {
+    opacity:0.5;
+}
+
+@keyframes OPACITY {
+    0%   {opacity: 0.5;}
+    50%  {opacity: 0.75;}
+    100%  {opacity: 1;}
+}
+
+.Opacity123:hover {
+    opacity: 1;
+    animation-name: OPACITY;
+    animation-duration: 0.2s;
+}
