@@ -27,13 +27,12 @@
 
 body {
     font-family: 'Montserrat';
-    background-color: wheat;
+    background-color: white;
 }
 
 section {
-    height: 40vh;
     width: 100%;
-    background-color: wheat;
+    background-color: transparent;
     display: flex;
     align-items: center; /* to make it center between up and down*/
     justify-content: center;
@@ -41,13 +40,11 @@ section {
 }
 
 .container {
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 18px;
     margin-bottom: 20px;
 }
 
@@ -59,12 +56,23 @@ section {
 
 .form-group input,
 .form-group textarea{
+    background-color: transparent;
     width: 100%;
     padding: 13px;
     font-size: 16px;
-    border: 1px solid rgba(120, 120, 120, 0.199);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.199);
     margin-top: 5px;
     font-family: 'Montserrat';
+}
+
+.form-group input
+.form-group textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 textarea {
@@ -77,7 +85,7 @@ button[type="submit"] {
     outline: none;
     padding: 20px;
     font-size: 24px;
-    border-radius: 8px;
+    border-radius: 26px;
     font-family: 'Montserrat';
     color: black;
     text-align: center;
@@ -88,6 +96,15 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: black;
     color: white;
+}
+
+#ERROR-TEXT-MAIL {
+    display: none;
+    color: red;
+    background-color: transparent;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat';
 }
 
 #status {
@@ -149,10 +166,11 @@ a[href]:visited {
     background-color:black;
     height:110px;
     width:520px;
-    font-size:55px;
+    font-size:50px;
     font-family:serif;
     font-weight:bold;
     border-radius:20px;
+    font-family: 'Montserrat';
 }
 #btn:hover {
     color: black;
