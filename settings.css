@@ -255,16 +255,20 @@ div[ACCESS]{
     position: relative; background-color: black; height: 380px; top: -50px;
 }
 .navbar {
+    top: 0%;
     width: 100%;
-    background-color: #ffffff;
+    height: 10%;
+    min-height: 10%;
+    background-color: white;
     text-align: center;
 }
 .navbar ul {
+    position: relative;
     display:flex;
     list-style: none;
     color: black;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar ul li {
@@ -277,7 +281,7 @@ div[ACCESS]{
     text-decoration: None;
     padding: 15px 10px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 19px;
     -webkit-transition: opacity 175ms ease-out;
     -moz-transition: opacity 175ms ease-out;
     -o-transition: opacity 175ms ease-out;
@@ -288,7 +292,7 @@ div[ACCESS]{
 
 .navbar ul li:hover {
     color: #000;
-    opacity: 10;
+    opacity: 1;
     text-decoration: None;
 }
 
@@ -389,7 +393,6 @@ a.nav-link[href]:hover {
     margin-top: 100px;
     margin-bottom: 0;
     padding-top: 10px;
-    position:relative;
     overflow:hidden;
     z-index:4;
     border-width: 5px 0 0;
@@ -416,6 +419,7 @@ a.nav-link[href]:hover {
 }
 
 .title {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -474,14 +478,21 @@ a.nav-link[href]:hover {
 }
 
 .bsc-contextmenu {
+    display:none;
     position: absolute;
+    background-color: white;
+    font-size: 18px;
+    border-color: black;
+    border-style: ridge;
+    border-block-color: black;
+    border-radius: 20px;
+    padding-right: 10px;
     top: 0;
     left: 0;
     z-index: 2300;
     font-family: Roboto,Arial,Helvetica,sans-serif;
     text-align: left;
     direction: ltr;
-    font-size: 11px;
     line-height: 1.3;
     -webkit-font-smoothing: antialiased;
     will-change: width,height;
@@ -507,4 +518,46 @@ a.nav-link[href]:hover {
     right: 0;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-style: ridge;
+    border-radius: 25%;
+    background-color: #ffffff;
+    bottom: 5%;
+    right: 7%;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-size: 22px;
+}
+
+.gotopbtn:hover {
+    background-color: black;
+    color: white;
+    bottom: 5.1%;
+}
+
+#Notificationmenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    width: 90%;
+    top: 20px;
+    left: 5%;
+    border-color: black;
+    border-style:solid;
+    padding-bottom: 15px;
+}
+
+.red-bg {
+    background-color: red;
+    color: white;
 }
