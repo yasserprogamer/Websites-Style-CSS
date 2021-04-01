@@ -28,6 +28,7 @@ DIV,UL,OL /* Left */
     box-sizing: border-box;
 }
 body {
+    min-zoom: 50%;
     padding: 0;
     margin: 0;
     background-position: top center;
@@ -101,9 +102,9 @@ p {
     border-top-style: solid;
     border-image: linear-gradient(139deg, #ff0000, #ffee00, #aaff00, #00ff00, #00ffee, #00aaff, #0000ff, #ee00ff, #aa00ff, #ff0000) 3;
 }
-.center, .mr-auto {
+/*.center, .mr-auto {
     margin-right: auto;
-}
+}*/
 /*.center {
     margin-left: auto;
 }*/
@@ -421,12 +422,15 @@ a.nav-link[href]:hover {
 .title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
 }
 
 .subtitle {
     width: 90%;
     font-family: 'Montserrat';
     text-align: center;
+    font-size: 35px;
+    text-decoration: none;
 }
 
 .FullWidth {
