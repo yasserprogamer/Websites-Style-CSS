@@ -1,0 +1,46 @@
+i.icon-en-us-flag {
+    content: url("../images/United\ states\ America.png");
+    width: 20%;
+    height: 20%;
+}
+@keyframes OPACITY {
+    0%   {opacity: 0.5;}
+    50%  {opacity: 0.75;}
+    100%  {opacity: 1;}
+}
+i.icon-sp-github {
+    content: url("../images/GitHub-Transparent-BG.png");
+    width: 15%;
+    height: 15%;
+    opacity:0.5;
+}
+i.icon-sp-github:hover {
+    opacity: 1;
+    animation-name: OPACITY;
+    animation-duration: 0.2s;
+}
+i.icon-sp-twitter {
+    content: url("../images/twitter-transparent-bg.png");
+    width: 16%;
+    height: 16%;
+    opacity:0.5;
+}
+i.icon-sp-twitter:hover {
+    opacity: 1;
+    animation-name: OPACITY;
+    animation-duration: 0.2s;
+}
+i.icon-sp-youtube {
+    content: url("../images/youtube-icon.png");
+    width: 16%;
+    height: 16%;
+    opacity:0.5;
+}
+i.icon-sp-youtube:hover {
+    opacity: 1;
+    animation-name: OPACITY;
+    animation-duration: 0.2s;
+}
+i.emoji-angry {
+    content: "\f556";
+}

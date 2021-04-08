@@ -75,15 +75,6 @@ section {
     border-right: none;
 }
 
-.form-group input[type="file"]{
-    display: flex;
-    height: 150px;
-    border: 2px solid rgba(120, 120, 120, 0.199);
-    border-radius: 20px;
-    font-family: 'Montserrat';
-    text-align: center;
-}
-
 textarea {
     resize: vertical;
 }
@@ -105,21 +96,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: black;
     color: white;
-}
-
-#Message {
-    text-transform:lowercase;
-    visibility:visible;
-}
-
-#Reason {
-    text-transform:lowercase;
-    visibility: visible;
-    overflow-x:hidden;
-}
-
-#Email {
-    visibility: visible;
 }
 
 #ERROR-TEXT-MAIL {

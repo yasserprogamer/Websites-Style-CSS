@@ -18,7 +18,7 @@
 .ws48 {font-size: 64px;}
 .ws72 {font-size: 96px;}
 .wpmd {font-size: 13px;font-family: Arial,Helvetica,Sans-Serif;font-style: normal;font-weight: normal;}
-/*----------Para Styles----------*/
+/*----------HTML Styles----------*/
 DIV,UL,OL /* Left */
 {
  margin-top: 0px;
@@ -27,6 +27,11 @@ DIV,UL,OL /* Left */
 * {
     box-sizing: border-box;
 }
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-family: Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+}
 body {
     min-zoom: 50%;
     padding: 0;
@@ -34,9 +39,13 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    background-color: var(--main-background);
-    color: var(--main-text);
+    /*background-color: var(--main-background);
+    color: var(--main-text);*/
     background-size: cover;
+}
+body.dark {
+    color: white;
+    background-color: black;
 }
 :root[data-theme="dark"] {
     --main-background: #38383d;
@@ -54,7 +63,6 @@ hr {
 }
   
 a {
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     line-height: 1.15;
 }
@@ -235,16 +243,7 @@ html {
       border: 1px solid #faa51b;
       color: #faa51b;
 }
-a[LPT][href]{
-    color: #000;
-    opacity: .7;
-    text-decoration: None;
-}
-a[LPT]:hover{
-    color: #000;
-    opacity: 10;
-    text-decoration: None;
-}
+
 .ashow {
     display: none;
 }
@@ -385,10 +384,45 @@ a.nav-link[href]:hover {
     width:40px;
 }
 
+/*______________<a></a> Styles & Editor____________*/
+
+a[href] {
+    color: blue;
+}
+
+a[href]:hover {
+    text-decoration: currentColor underline;
+}
+
+a[LPT][href]{
+    color: #000;
+    opacity: .7;
+    text-decoration: None;
+}
+a[LPT]:hover{
+    color: #000;
+    opacity: 1;
+    text-decoration: None;
+}
+
+/*_________________________________________________*/
+
+/*______________Heads & Headers Styles____________*/
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+}
+
+/*________________________________________________*/
+
+/*______________Footer Styles & Display____________*/
+
 #footer {
-    border-block-color: #353535;
-    background-color:#000000;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #dadce0;
+    background-color:#fff;
+    font: 400 14px/16px Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    padding: 0 24px;
     width: 100%;
     height: 100%;
     margin-top: 100px;
@@ -396,16 +430,49 @@ a.nav-link[href]:hover {
     padding-top: 10px;
     overflow:hidden;
     z-index:4;
-    border-width: 5px 0 0;
-    border-top-style: solid;
+    /*border-width: 5px 0 0;
+    border-top-style: solid;*/
 }
 
-#footer:hover {
-    border-block-color: #000000;
-    background-color:#ffffff;
-    color: black;
-    text-decoration-color: white;
+.footer-linkboxes {
+    background-color:#fff;
+    font: 400 14px/16px Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
 }
+
+.footer-linkboxes-list {
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    list-style: none;
+    padding: 0
+}
+
+.footer-linkbox {
+    flex: 1;
+    margin: 24px 0;
+}
+
+.footer-linkbox-heading {
+    font-family: Roboto,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+    
+}
+
+.footer-linkbox-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-linkbox-link {
+    color: #202124;
+    display: block;
+    font-size: 18px;
+    padding: 7px 0;
+}
+
+.footer-linkbox-link a[href] {
+    color: #202124;
+}
+
+/*________________________________________________*/
 
 .coollink {
     color: white;
@@ -431,6 +498,11 @@ a.nav-link[href]:hover {
     text-align: center;
     font-size: 35px;
     text-decoration: none;
+    text-transform: lowercase;
+}
+
+.ignorecases {
+    text-transform:none;
 }
 
 .FullWidth {
@@ -564,4 +636,8 @@ a.nav-link[href]:hover {
 .red-bg {
     background-color: red;
     color: white;
+}
+
+footertext[first] {
+    color: #000;
 }
